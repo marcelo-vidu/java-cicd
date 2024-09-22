@@ -23,6 +23,9 @@ jobs:
           distribution: 'temurin'
           architecture: x64
           cache: maven
+      
+      - name: Run Checkstyle
+        run: mvn checkstyle:check
 
       - name: Run the Maven verify phase
         run: mvn --batch-mode --update-snapshots verify
