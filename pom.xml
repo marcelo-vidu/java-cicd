@@ -58,7 +58,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>org.sen.App</mainClass> <!-- Replace with your main class -->
+                            <mainClass>org.sen.App</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
