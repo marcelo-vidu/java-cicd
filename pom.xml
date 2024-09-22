@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -34,7 +33,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>org.sen.App</mainClass>
+                            <mainClass>org.sen.App</mainClass> <!-- Replace with your main class -->
                         </manifest>
                     </archive>
                     <descriptorRefs>
@@ -55,11 +54,11 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>3.2.0</version> <!-- Adjust version if necessary -->
+                <version>3.2.0</version>
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>org.sen.App</mainClass> <!-- Specify your main class here -->
+                            <mainClass>org.sen.App</mainClass> <!-- Replace with your main class -->
                         </manifest>
                     </archive>
                 </configuration>
@@ -80,22 +79,14 @@
                     </scanTargetPatterns>
                 </configuration>
             </plugin>
-
         </plugins>
     </build>
 
     <dependencies>
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13.1</version>
-        </dependency>
-        
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.8.2</version>
+            <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
         
@@ -114,11 +105,8 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>4.0.1</version> <!-- Use the version compatible with your Jetty version -->
+            <version>4.0.1</version>
             <scope>provided</scope>
         </dependency>
-
     </dependencies>
-
 </project>
-
