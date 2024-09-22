@@ -1,7 +1,8 @@
+package org.sen;
+
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
-import org.sen.MyServlet;
 
 /**
  * This class demonstrates how to set up a Jetty server.
